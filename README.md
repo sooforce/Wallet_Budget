@@ -1,11 +1,11 @@
-Personal Finance Management Application
+# Personal Finance Management Application
 
-Introduction
+## Introduction
 
 This Personal Finance Management Application is a web-based tool designed to help users manage their income, expenses, and savings effectively. It enables users to track their financial habits, generate reports, and make better financial decisions. The application is built using Flask and SQLite with a user-friendly interface for seamless financial management.
 
 
-Features
+## Features
 
 - User Authentication
 
@@ -36,10 +36,11 @@ Features
 - Optimized for all devices with clean and intuitive navigation.
 
 - 
-Installation
+
+## Installation
 
 
-Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/<your-username>/<your-repo-name>.git
@@ -51,13 +52,13 @@ source venv/bin/activate  # For Linux/Mac
 venv\Scripts\activate     # For Windows
 
 ```
-Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 
 ```
-Set Up the Database
+### Set Up the Database
 
 The application uses SQLite as the database.
 Run the following command to initialize the database:
@@ -68,14 +69,14 @@ flask db migrate
 flask db upgrade
 
 ```
-Run the Application
+### Run the Application
 
 ```bash
 flask run
 ```
 The application will be available at http://127.0.0.1:5000/.
 
-Usage
+### Usage
 
 - Navigate to the registration page to create a new account.
 - Log in with your credentials to access the dashboard.
@@ -97,7 +98,7 @@ Admin users can manage users, expenses, and reset the database via the "Analytic
 ![image](https://github.com/user-attachments/assets/8807b0be-b58d-4386-a7aa-4099b6ecaf81)
 
 
-Technologies Used
+### Technologies Used
 
 - Backend: Flask, SQLite
 - Frontend: HTML, CSS, JavaScript
@@ -105,13 +106,13 @@ Technologies Used
 - Security: Werkzeug (Password Hashing)
 - Development Tools: Python, Virtual Environment
 
-Future Enhancements
+### Future Enhancements
 
 - Add multi-user roles for advanced admin functionalities.
 - Implement visualization tools for financial data (e.g., charts).
 - Enable email notifications for financial updates and reports.
 - Introduce AI-based financial insights.
 
-Contributing
+### Contributing
 
 - Contributions are welcome! Please fork this repository and create a pull request with detailed descriptions of your changes.
