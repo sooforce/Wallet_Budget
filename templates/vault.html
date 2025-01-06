@@ -1,0 +1,66 @@
+<!-- templates/vault.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+
+
+    <div class="column">
+        <h1>Vault</h1>
+                <img src="{{ url_for('static', filename='vault.png') }}" alt="Dashboard Image" class="report-image">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Investment: {{ total_investment | round(2) }}€</h3>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="column">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Entertainment: {{ total_entertainment | round(2) }}€</h3>
+        <br>
+    </div>
+    <div class="column">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Living: {{ total_living | round(2) }}€</h3>
+    </div>
+</div>
+
+{% endblock %}
+
+

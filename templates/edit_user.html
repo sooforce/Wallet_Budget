@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Edit User</h2>
+<form method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" value="{{ user.username }}" required>
+    <button type="submit">Save</button>
+</form>
+{% endblock %}

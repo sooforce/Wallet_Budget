@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+        <div class="column">
+
+            <h1>Reports</h1>
+            <img src="{{ url_for('static', filename='reports.png') }}" alt="Dashboard Image" class="report-image">
+        </div>
+    <ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        {% for file in files %}
+
+            <li>
+                <a href="{{ url_for('static', filename='reports/' + file) }}" target="_blank">{{ file }}</a>
+                 <a href="{{ url_for('delete_report', filename=file) }}" class="btn-delete">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

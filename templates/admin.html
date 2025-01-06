@@ -1,1 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="column">
+        <h1>Admin Page</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Users</h3>
+        <ul>
+            {% for user in users %}
+                <li>{{ user.id }} - {{ user.username }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 
+    <div class="column">
+            <img src="{{ url_for('static', filename='admin.png') }}" alt="Dashboard Image" class="dashboard-image">
+        <br>
+        <hr class="separator">
+        <br>
+        <h3>Salaries</h3>
+        <ul>
+            {% for salary in salaries %}
+                <li>  {{ salary.amount }}€ - {{ salary.date.strftime('%d/%m/%y %H:%M') }}
+                    <a href="{{ url_for('edit_salary', salary_id=salary.id) }}" class="btn-edit">Edit</a>
+                    <a href="{{ url_for('delete_salary', salary_id=salary.id) }}" class="btn-delete">Delete</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <h3>Expenses</h3>
+        <ul>
+            {% for expense in expenses %}
+                <li>{{ expense.amount }}€ - {{ expense.description }} - {{ expense.category }} - {{ expense.date.strftime('%d/%m/%y %H:%M') }}
+                    <a href="{{ url_for('edit_expense', expense_id=expense.id) }}" class="btn-edit">Edit</a>
+                    <a href="{{ url_for('delete_expense', expense_id=expense.id) }}" class="btn-delete">Delete</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="column">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr class="separator">
+        <br>
+        <h3>Settings</h3>
+        <ul>
+            {% for setting in settings %}
+                <li>Investment: {{ setting.investment_percentage }}% - Entertainment: {{ setting.entertainment_percentage }}% - Living: {{ setting.living_percentage }}% </li>
+            {% endfor %}
+        </ul>
+        <br>
+        <h3>Vault</h3>
+        <ul>
+            {% for vault in vaults %}
+                <li>Total Investment: {{ vault.total_investment }}€ - Total Entertainment: {{ vault.total_entertainment }}€ - Total Living: {{ vault.total_living }}€</li>
+            {% endfor %}
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="{{ url_for('reset_database') }}" class="btn-reset"><i class="fas fa-sync-alt"></i> Reset Database</a>
+    </div>
+</div>
+{% endblock %}
