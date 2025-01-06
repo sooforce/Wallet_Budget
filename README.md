@@ -32,33 +32,42 @@ Responsive Design
 
 Optimized for all devices with clean and intuitive navigation.
 Installation
+
+
 Clone the Repository
 
-
+```bash
 git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
 Set Up Virtual Environment
 
-
 python -m venv venv
 source venv/bin/activate  # For Linux/Mac
 venv\Scripts\activate     # For Windows
+
+```
 Install Dependencies
 
-
+```bash
 pip install -r requirements.txt
+
+```
 Set Up the Database
 
 The application uses SQLite as the database.
 Run the following command to initialize the database:
 
+```bash
 flask db init
 flask db migrate
 flask db upgrade
+
+```
 Run the Application
 
-
+```bash
 flask run
+```
 The application will be available at http://127.0.0.1:5000/.
 
 Usage
