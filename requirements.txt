@@ -1,7 +1,5 @@
 Please follow the instructions included in the requirements.txt file. If anything is not working, let me know before taking any actions
 
-The only functionality not working is that the vault is not retaining the remaining balances from previous months. If I manage to resolve this issue, I will let you know.
-
 Enjoy !! 
 
 
