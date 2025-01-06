@@ -1,0 +1,30 @@
+Please follow the instructions included in the requirements.txt file. If anything is not working, let me know before taking any actions
+
+The only functionality not working is that the vault is not retaining the remaining balances from previous months. If I manage to resolve this issue, I will let you know.
+
+Enjoy !! 
+
+
+
+1. Open Windows powershell and navigate to the directory that the program is
+cd [path to your directory]
+
+2. python -m venv venv
+
+3. .\venv\Scripts\Activate
+
+4. pip install fpdf
+
+5. pip install flask
+
+6. pip install Flask-SQLAlchemy
+
+7. python app.py
+
+8. open your browser and use the link : localhost:5000 
+
+9. navigate to Analytics page and press "Reset Database" button in order to delete all of my entries in that program 
+
+10. Visit localhost:5000/register in order to create your own account and password [BE CAREFUL YOU HAVE TO MEMORIZE THESE INFO] 
+
+11. Log in to the system and play with the program 

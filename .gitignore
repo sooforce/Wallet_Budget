@@ -1,0 +1,42 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+
+
+
+# Virtual environment directories
+Lib/
+Scripts/
+include/
+pyvenv.cfg
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# IDE settings (e.g., VSCode, PyCharm)
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Exclude database and reports if they aren't needed
+*.sqlite3
+site.db
+static/reports/*.pdf
+monthly_report.pdf
+
+
+# Ignore virtual environments and Python library files
+Lib/
+Scripts/
+*.pyc
+__pycache__/
+.env
+.venv/
+*.log
+*.tmp
