@@ -1,1 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    margin: 20px;
+    min-width: 280px;
+
+}
+
+h1, h2, h3 {
+    color: #343a40;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+ul li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background: #fff;
+    padding: 35px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #495057;
+}
+
+form input, form select, form button {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+
+}
+
+form button {
+    background-color: #20c997;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background-color: #17a2b8;
+}
+
+#export-pdf {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#export-pdf:hover {
+    background-color: #c82333;
+
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+        text-decoration: none; /* Ensure links don't have underline */
+
+}
+
+.btn-edit {
+    background-color: #6c757d; /* Grey color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-decoration: none; /* Ensure links don't have underline */
+
+
+}
+
+.btn-edit:hover {
+    background-color: #5a6268; /* Darker grey shade for hover */
+        text-decoration: none; /* Ensure links don't have underline */
+
+}
+
+.btn-reset {
+    background-color: #222; /* Grey color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none; /* Ensure links don't have underline */
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.btn-reset i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.btn-reset:hover {
+    background-color: #5a6268; /* Darker grey shade for hover */
+}
+
+.navbar {
+    background-color: #c9d9cb;
+    padding: 10px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure wrapping on small screens */
+    min-height:35px;
+
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-left a, .nav-right a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold; /* Make text bold */
+    padding: 0 10px;
+    position: relative;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+  transform: scale(1.1);
+  transition: transform .2s;
+
+
+}
+
+/* Add vertical line separator */
+.nav-left a:not(:first-child)::before, .nav-right a:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 1px;
+    background-color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #c9d9cb;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.dashboard-image {
+    max-width: 30%;
+    margin-top:10px;
+    margin-left:150px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    transition: transform 0.2s; /* Adds a smooth transition on hover */
+}
+
+.dashboard-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+.report-image {
+    max-width: 40%;
+    max-height: 150px;
+    margin-top:10px;
+    margin-left:-13px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    transition: transform 0.2s; /* Adds a smooth transition on hover */
+}
+
+.separator {
+    border: none; /* Remove default border */
+    height: 4px; /* Adjust thickness */
+    background-color: #2222; /* Adjust color */
+    margin: 20px 0; /* Adjust spacing */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
 
