@@ -73,22 +73,9 @@ Export monthly financial reports in PDF format via the "Reports" section.
 View savings breakdown in the "Vault" section.
 Admin users can manage users, expenses, and reset the database via the "Analytics" section.
 
-File Structure
 
-.
-├── app.py                  # Main application logic
-├── database.py             # Database interaction utilities
-├── query_site_db.py        # Helper functions for database queries
-├── templates/              # HTML templates for frontend
-│   ├── base.html           # Base template
-│   ├── dashboard.html      # Dashboard view
-│   ├── register.html       # Registration form
-│   ├── vault.html          # Vault summary
-│   └── reports.html        # Reports section
-├── static/                 # Static assets (CSS, JS, images)
-├── site.db                 # SQLite database
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+![image](https://github.com/user-attachments/assets/8807b0be-b58d-4386-a7aa-4099b6ecaf81)
+
 
 Technologies Used
 
